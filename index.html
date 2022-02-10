@@ -19,6 +19,41 @@ body {
   padding-top: 40px;
   padding-bottom: 40px;
 }
+
+.projects-item .progect-name{
+  font-size: 18px;
+ 
+}
+
+.project-link{
+  color: #ff6b08;
+
+ 
+}
+
+.project-description{
+  font-size: 14px;
+  color:  #5f6772 ;
+  font-weight: 400;
+
+}
+
+.technologies,
+.github-description,
+.project-description-title{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+
+  color: #1e2939;
+}
+
+.technologies-items,
+.github-link{
+  font-size: 14px;
+  color:  #5f6772 ;
+  font-weight: 300;
+}
 .wrapper {
   background-color: #ffffff;
   display: flex;
@@ -31,6 +66,11 @@ body {
   background: #1e2939;
   padding-top: 40px;
   padding-bottom: 40px;
+}
+
+.contacts-link-type{
+   font-size: 14px;
+   color: #5f6772;
 }
 
 .my-photo {
@@ -73,7 +113,8 @@ body {
   margin-right: 10px;
 }
 
-.tech-skills {
+.tech-skills ,
+.language-skills {
   font-size: 22px;
   font-weight: 700;
   line-height: 24px;
@@ -87,7 +128,14 @@ body {
   margin-top: 55px;
 }
 
-.tech-skills-item {
+.language-skills-container{
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 55px;
+}
+
+.tech-skills-item,
+.language-skills-item {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -95,6 +143,7 @@ body {
   margin-left: 15px;
 }
 
+.language-skills-text,
 .tech-skills-text {
   color: #a9aeb4;
 }
@@ -106,6 +155,8 @@ body {
   color: #ffffff;
   margin-bottom: 20px;
 }
+
+
 
 .soft-skills-container {
   margin-top: 55px;
@@ -179,6 +230,7 @@ body {
 .projects-item {
   font-weight: 700;
   margin-left: 17px;
+  margin-top: 10px;
 }
 
 .projects-container {
@@ -263,11 +315,14 @@ body {
            <div class="contacts-container">
                <h3 class="contacks-title">Contacts</h3>
                <div> 
-                  <span class="contacts-link-type">C:</span> <a class="contacts-links" href="tel:+380631800120">+380631800120</a> 
+                  <span class="contacts-link-type">Tel :</span> <a class="contacts-links" href="tel:+380631800120">+380631800120</a> 
                 </div>
                <div
-                 <span class="contacts-link-type">E: </span> <a class="contacts-links" href="mailto: yuskiv280478@icloud.com">yuskiv280478@icloud.com</a>
+                 <span class="contacts-link-type">Email :</span> <a class="contacts-links" href="mailto: yuskiv280478@icloud.com">yuskiv280478@icloud.com</a>
               </div>
+              <div
+              <span class="contacts-link-type">GitHub:</span> <a class="contacts-links" href="https://github.com/Vladislav-Yuskiv">GitHub</a>
+           </div>
            </div>
            <!--Tech skills container-->
            <div class="tech-skills-container">
@@ -283,18 +338,32 @@ body {
                    <li class="tech-skills-item"><span class="tech-skills-text">React.js</span></li>
                    <li class="tech-skills-item"><span class="tech-skills-text">Node.js</span></li>
                    <li class="tech-skills-item"><span class="tech-skills-text">React-Native</span></li>
+                   <li class="tech-skills-item"><span class="tech-skills-text">Scrum</span></li>
+                   <li class="tech-skills-item"><span class="tech-skills-text">Agile</span></li>
+                   <li class="tech-skills-item"><span class="tech-skills-text">GTD</span></li>
                </ul>
            </div>
            <!--Soft skills-->
            <div class="soft-skills-container">
                <h3 class="soft-skills">Soft skills</h3>
+              
                <ul>
-               <li class="soft-skils-item"><span class="soft-skils-text">Scrum</span></li>
-               <li class="soft-skils-item"><span class="soft-skils-text">Agile</span></li>
-               <li class="soft-skils-item"><span class="soft-skils-text">GTD</span></li>
+                <li class="soft-skils-item"><span class="soft-skils-text">Responsible</span></li>
+                <li class="soft-skils-item"><span class="soft-skils-text">Sociable</span></li>
+                <li class="soft-skils-item"><span class="soft-skils-text">Persistent</span></li>
+                <li class="soft-skils-item"><span class="soft-skils-text"> Single-minded</span></li>
                <li class="soft-skils-item"><span class="soft-skils-text">Teamwork</span></li>
                </ul>
            </div>
+
+           <div class="language-skills-container">
+            <h3 class="language-skills">Language skills</h3>
+            <ul>
+            <li class="language-skills-item"><span class="language-skills-text">Ukranian - С2</span></li>
+            <li class="language-skills-item"><span class="language-skills-text">Russian - С1</span></li>
+            <li class="language-skills-item"><span class="language-skills-text">English -В1</span></li>
+            </ul>
+        </div>
      </aside> 
       <!-- about my conteiner -->
      <div class="about-me-container" style="width: 700px;">
@@ -302,24 +371,45 @@ body {
          <div class="info-container">
            <h2 class="proffesion">Front-End Developer</h2>
            <h1 class="name">Vladyslav Yuskiv</h1>
-           <p class="description">Hi, my name is Vlad, I am a student and I am 18 years old. I am studying to be a programmer and I want to work and
+           <p class="description"> I am studying to be a programmer and I want to work and
         develop in the field of IT. My advantages are sociability, responsibility and desire to develop. Successfully completed GoIT courses at FullStack JavaScript Developer. He also did an internship at Elogic Commerce
         where he got acquainted with the modern E-Commerce system.</p>
         </div>
             <!--projects container-->
         <div class="projects-container">
              
-            <h3 class="projects-title">Projects</h3>
+            <h3 class="projects-title">Projects experience</h3>
             <ol>
            <li class="projects-item"> 
-               <a class="projects-link" href="https://gigorko1993.github.io/ice-cream/" target="blank"> https://gigorko1993.github.io/ice-cream/</a>
-               <span class="dots">...............................</span>
-            <span> <b>[</b> <span class="program-name">HTML5, CSS3</span> <b>]</b></span>
+               <h4 class="progect-name" > 
+                 <a href="https://gigorko1993.github.io/ice-cream/"  target="blank" class="project-link">IceCream</a>
+                </h4>
+
+            <p class="github-description">GitHub Link : 
+              <a  class="github-link" href="https://github.com/gigorko1993/ice-cream">https://github.com/gigorko1993/ice-cream</a>
+            </p>
+            
+            <p class="technologies">Technologies: <span class="technologies-items"> HTML5, CSS3, SASS</span></p>
+
+            <p class="project-description-title">Description:</p>
+            <p class="project-description">The project is performed by a small team  using modern technologies such as HTML5, CSS3, SASS , Git.  The application is adaptive to different devices.  I was a Front-End Developer on this project</p>
+        
            </li>
+
+
            <li class="projects-item">
-               <a class="projects-link" href="https://danatey.github.io/astro-team-project/index.html" target="blank">https://danatey.github.io/astro-team-project/index.html</a>
-               <span class="dots">..............</span>
-               <span><b>[</b><span class="program-name">JavaScript</span> <b>]</b> </span>
+            <h4 class="progect-name" > 
+              <a href="https://danatey.github.io/astro-team-project/index.html"  target="blank" class="project-link">Search Movies</a>
+            </h4>
+
+            <p class="github-description">GitHub Link : 
+              <a class="github-link" href="https://github.com/gigorko1993/ice-cream">https://github.com/Danatey/astro-team-project</a>
+            </p>
+            
+            <p class="technologies">Technologies: <span class="technologies-items"> HTML5, CSS3, SASS ,  <b>JavaScript</b> , WebPack , Git </span></p>
+
+            <p class="project-description-title">Description:</p>
+            <p  class="project-description">The project  is performed by a small team  using modern technologies .  The application is adaptive to different devices.  I was a Front-End Developer on this project</p>
             </li>
            <!-- <li class="projects-item">
                <a class="projects-link" href="https://kidslike.goit.co.ua/" target="blank">https://kidslike.goit.co.ua/</a>
@@ -333,18 +423,14 @@ body {
                 <h3 class="work-title">Work Experience</h3>
                 <!--company 1-->
                 <div>
-                    
+
                    <h4 class="proffection-title">Trainee Magento 2 Front-End Developer <span class="proffesion-company">Elogic Commerce</span> </h4>
                    <span class="proffection-time">June 2019 - September 2021 | Ukraine , Chernivtsi</span>
                   <ul class="proffession-duties">
-                   <li class="proffession-duties-items">He underwent an internship at Elogic, after which he received a certificate of successful completion</li>
+                   <li class="proffession-duties-items">I underwent an internship at Elogic, after which i received a certificate of successful completion</li>
                     <li class="proffession-duties-items">Acquainted with the modern eCommerce platform with open source</li>
                  </ul>
                 </div>
-              <div class="additional-container">
-                  <h4 class="education-title">Additional</h4>
-                   <p class="additional-description">I have experience in developing mobile applications on React Native</p>
-              </div> 
                 
             </div>
             <!--Education-->
